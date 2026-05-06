@@ -1,0 +1,24 @@
+# robots.txt for bitform.co.jp
+# https://bitform.co.jp
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://bitform.co.jp/sitemap.xml
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+
+# Yahoo Japan specific
+User-agent: Y!J-ASR
+Allow: /
+
+User-agent: Y!J-BSC
+Allow: /
