@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logoImg from '../assets/913cd9fdf65892484af5c535fc4518e9e5058365.png';
 
 export const Footer = () => {
@@ -37,8 +38,11 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 pt-8 text-center text-sm text-slate-500">
-          © {new Date().getFullYear()} BitForm Inc. All rights reserved.
+        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+          <span>© {new Date().getFullYear()} BitForm Inc. All rights reserved.</span>
+          <Link to="/privacy" className="hover:text-[#30D5C8] transition-colors">
+            プライバシーポリシー
+          </Link>
         </div>
       </div>
     </footer>
